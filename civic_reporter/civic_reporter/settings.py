@@ -35,6 +35,10 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'accounts',
+    'civic_reporter',
+    'reports',
+
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -49,7 +53,7 @@ ROOT_URLCONF = "civic_reporter.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": ['templates'],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
